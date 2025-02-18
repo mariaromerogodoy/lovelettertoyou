@@ -1,0 +1,123 @@
+body {
+  margin: 70px ;
+  background-color: rgb(247, 246, 243);
+      background-image: url(https://t4.ftcdn.net/jpg/09/28/11/81/360_F_928118160_vEe4NNnGawHikyIrAp4xZdHCj0p90eMU.jpg);
+      background-size: cover;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+.animated-text {
+font-size: 24px;
+text-align: center;
+max-width: 600px;
+width: 80%;
+font-family: Garamond;
+font-size: 22px;
+color: rgb(92, 5, 5);
+}
+
+.line {
+opacity: 0;
+animation: fadeInLine 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInLine {
+to {
+  opacity: 1;
+}
+}
+
+
+.line:nth-child(1) {
+animation-delay: 0s;
+}
+.line:nth-child(2) {
+animation-delay: 2s;
+}
+.line:nth-child(3) {
+animation-delay: 4s;
+}
+.line:nth-child(4) {
+animation-delay: 6s;
+}
+.line:nth-child(5) {
+animation-delay: 8s;
+}
+.line:nth-child(6) {
+animation-delay: 10s;
+}
+.line:nth-child(7) {
+animation-delay: 12s;
+}
+.line:nth-child(8) {
+animation-delay: 14s;
+}
+.line:nth-child(9) {
+animation-delay: 16s;
+}
+.line:nth-child(10) {
+animation-delay: 18s;
+}
+.line:nth-child(11) {
+animation-delay: 20s;
+}
+.line:nth-child(12) {
+animation-delay: 22s;
+}
+.line:nth-child(13) {
+animation-delay: 24s;
+}
+.line:nth-child(14) {
+animation-delay: 26s;
+}
+.line:nth-child(15) {
+animation-delay: 28s;
+}
+.line:nth-child(16) {
+animation-delay: 30s;
+}
+.line:nth-child(17) {
+animation-delay: 32s;
+}
+.line:nth-child(18) {
+animation-delay: 34s;
+}
+.line:nth-child(19) {
+animation-delay: 36s;
+}
+
+
+.play-pause-btn {
+  background-color: rgb(92, 5, 5); 
+  color: rgb(239, 226, 208);
+  padding: 15px 30px;
+  font-size: 24px;
+  font-family: MonteCarlo;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: fixed; 
+  left: 20px; 
+  bottom: 20px;
+}
+
+.play-pause-btn:hover {
+  background-color: rgb(239, 226, 208); 
+        border: 2px solid rgb(92, 5, 5);
+        color: rgb(92, 5, 5);
+}
+
+.play-pause-btn:active {
+  background-color: rgb(239, 226, 208); 
+   border: 2px solid rgb(92, 5, 5);
+        color: rgb(92, 5, 5);
+}
+
+
+.audio-player {
+  width: 300px;
+  margin: 20px auto;
+  text-align: left;
+}
