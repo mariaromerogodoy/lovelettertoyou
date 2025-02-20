@@ -144,6 +144,7 @@ animation-delay: 50s;
         font-size: 24px;
         font-family: MonteCarlo;
         border: none;
+        text-decoration: none;  
         border-radius: 8px; 
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
@@ -169,5 +170,29 @@ animation-delay: 50s;
         width: 300px;
         margin: 20px auto;
         text-align: left;
+      }
+      
+      .letter a {
+        background-color: rgb(92, 5, 5); 
+        color: rgb(239, 226, 208);
+        padding: 15px 30px;
+        font-size: 24px;
+        font-family: MonteCarlo;
+        border-radius: 8px; 
+        cursor: pointer;
+        text-decoration: none;  
+        transition: background-color 0.3s ease-in-out;
+        position: right; 
+        left: 60px; 
+        bottom: 10px; 
+        text-align: center;
+        display: block;
+      }
+      
+      .letter a:hover {
+        background-color: rgb(239, 226, 208); 
+        border: 2px solid rgb(92, 5, 5);
+        color: rgb(92, 5, 5);
+        text-decoration: none; 
       }
       
