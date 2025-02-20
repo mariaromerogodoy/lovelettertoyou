@@ -182,9 +182,10 @@ animation-delay: 50s;
         cursor: pointer;
         text-decoration: none;  
         transition: background-color 0.3s ease-in-out;
-        position: right; 
-        left: 60px; 
-        bottom: 10px; 
+        position: fixed; 
+        right: 20px;  
+        bottom: 20px;  
+        z-index: 999;
         text-align: center;
         display: block;
       }
