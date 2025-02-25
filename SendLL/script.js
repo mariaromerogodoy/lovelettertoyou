@@ -2,7 +2,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     var senderEmailInput = document.getElementById('sender_email').value.trim();
     var recipientEmailInput = document.getElementById('recipient_email').value.trim();
     var messageInput = document.getElementById('message').value.trim();
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex pattern
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
 
     if (!emailPattern.test(senderEmailInput)) {
         alert('Please enter a valid sender email address.');
@@ -23,26 +23,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recipient_email = trim($_POST["recipient_email"]);
     $message = trim($_POST["message"]);
 
-    // Validate inputs
     if (empty($name) || empty($sender_email) || empty($recipient_email) || empty($message)) {
         echo "All fields are required.";
         exit;
     }
 
-    // Simple email validation
     if (!filter_var($sender_email, FILTER_VALIDATE_EMAIL) || !filter_var($recipient_email, FILTER_VALIDATE_EMAIL)) {
         echo "Invalid email format.";
         exit;
     }
 
-    // Prepare the email content
     $subject = "Love Letter from $name";
     $body = "You have received a love letter from $name ($sender_email):\n\n$message";
     $headers = "From: $sender_email\r\n";
     $headers .= "Reply-To: $sender_email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    // Send email to the recipient
     if (mail($recipient_email, $subject, $body, $headers)) {
         echo "Email sent successfully!";
     } else {
